@@ -38,9 +38,18 @@ cp TranS /usr/share/TranS/
 cp tahoma.ttf $HOME/.wine/drive_c/windows/Fonts/
 cp tahomabd.ttf $HOME/.wine/drive_c/windows/Fonts/
 chmod 775 /usr/share/TranS/TranS
+ln -s /usr/share/TranS/TranS /usr/bin/
 
 echo "####################_____Deleting Temprary Files_____####################"
 
 rm -f TranS.zip
 rm -rf TranS
 rm -f TranS
+
+echo "########################_____Starting TranS_____#########################"
+
+echo "#########################################################################"
+echo "#########################################################################"
+echo "#####################_____TranS Installer Done!_____#####################"
+echo "#########################################################################"
+echo "#########################################################################"
