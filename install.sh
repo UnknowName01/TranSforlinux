@@ -11,7 +11,7 @@ echo "########################_____Installing Wine_____########################"
 
 sudo dpkg --add-architecture i386
 sudo apt-get update 
-sudo apt-get install wine:i386
+sudo apt-get install wine:i386 unzip
 
 
 echo "################_____Installing .NET Framework 4.5_____##################"
@@ -21,11 +21,19 @@ winetricks dotnet45
 
 echo "#################_____Downloading Files From Source_____#################"
 
+wget https://github.com/UnknowName01/TranSforlinux/raw/main/TranS.zip
+wget 
 
 
 echo "###########################_____Extracting_____##########################"
 
+unzip TranS.zip
+
 echo "##########################_____Copying Files_____########################"
+
+cp -r ./TranS /usr/share/
 
 echo "####################_____Deleting Temprary Files_____####################"
 
+rm -f TranS.zip
+rm -rf TranS
