@@ -29,11 +29,11 @@ wget https://github.com/UnknowName01/TranSforlinux/raw/main/execute/TranS
 
 echo "###########################_____Extracting_____##########################"
 
-unzip TranS.zip
+unzip TranS.zip -d ./temp
 
 echo "##########################_____Copying Files_____########################"
 
-cp -r ./TranS /usr/share/
+cp -r ./temp/TranS /usr/share/
 cp TranS /usr/share/TranS/
 cp tahoma.ttf $HOME/.wine/drive_c/windows/Fonts/
 cp tahomabd.ttf $HOME/.wine/drive_c/windows/Fonts/
@@ -43,7 +43,7 @@ ln -s /usr/share/TranS/TranS /usr/bin/
 echo "####################_____Deleting Temprary Files_____####################"
 
 rm -f TranS.zip
-rm -rf TranS
+rm -rf temp
 rm -f TranS
 
 echo "########################_____Starting TranS_____#########################"
